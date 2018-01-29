@@ -116,10 +116,10 @@ const ExpressNode = function(port) {
 
   const createBlock = newBlock => {
     console.log("INCREATEBLOCK");
-    let newBlock = chain.createBlock(newBlock);
-    chain.addToChain(newBlock);
+    let newBlockz = chain.createBlock(newBlockz);
+    chain.addToChain(newBlockz);
     console.log(chain.getChain());
-    broadcastMessage(BLOCK, newBlock);
+    broadcastMessage(BLOCK, newBlockz);
   };
 
   const getStats = () => {

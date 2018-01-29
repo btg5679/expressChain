@@ -20,7 +20,7 @@ const ExpressChain = function() {
   }
 
   function generateHash({ timestamp, data, index, previousHash, nonce }) {
-    return Crypto.generateHash("SHA256")
+    return Crypto.createHash("SHA256")
       .update(timestamp + data + index + previousHash + nonce)
       .digest("hex");
   }
